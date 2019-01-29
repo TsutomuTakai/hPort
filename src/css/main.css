@@ -35,7 +35,7 @@ h1 {
     display: none;
 }
 
-/* NAVIBAR */
+/* ------------------------------NAVIBAR--------------------- */
 #navbar {
     width: 60px;
     height: 100vh;
@@ -107,7 +107,45 @@ h1 {
     font-size: 15px;
 }
 
-/* LAND */
+/* ------------------------------NAVIBAR MOBILE--------------------- */
+#m-navbar {
+    width: 100vw;
+    height: 60px;
+    background-color: var(--main-bg-nav);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    display: none;
+}
+
+
+#m-navbar .navi {
+    display: flex;
+    font-size: 22px;
+    height: 100%;
+    width: 96%;
+    margin: 0 2%;
+    justify-content: space-between;
+}
+
+#m-navbar .navi a {
+    display: inline-block;
+    color: var(--main-nav-icon);
+    height: 60px;
+    width: 14.28%;
+    text-align: center;
+    padding: 14px 0;
+}
+
+#m-navbar .navi a.active,
+#m-navbar .navi a:hover {
+    color: var(--main-pink);
+}
+
+
+/* -----------------------------LAND -------------------------*/
 #land {
     height: 100vh;
 
@@ -260,42 +298,28 @@ h1 {
         display: none;
     }
 
+    #m-navbar{
+        display: block;
+    }
+
     .text-area {
-        color: white;
-        position: absolute;
         left: 3%;
-        top: 80%;
-        transform: translate(0, -50%);
-        letter-spacing: 2px;
-        font-family: var(--title-font);
     }
 
     .greet,
     .present {
-        display: block;
         font-size: 1.5rem;
-        line-height: 1;
     }
 
     .name {
         font-size: 5rem;
-        line-height: 1;
-        color: var(--main-purple);
-
     }
 
     .title-job {
         font-size: 1.2rem;
-        max-width: 100%;
-        text-align: justify;
     }
 
     .back-land {
         position: absolute;
-        left: -25%;
-        color: var(--main-gray);
-        z-index: -1;
-        height: 100%;
-        overflow: hidden;
     }
 }

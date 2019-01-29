@@ -154,7 +154,7 @@ h1 {
 .top-tag,
 .bot-tag {
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
+    font-size: 0.7rem;
     color: var(--main-gray);
 }
 
@@ -183,7 +183,7 @@ h1 {
 .text-area::before {
     content: "»public class GameController : MonoBehaviour {";
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
+    font-size: 0.7rem;
     color: var(--main-gray);
 }
 
@@ -214,16 +214,16 @@ h1 {
 }
 
 .b-contact {
+    margin-top: 25px;
     background-color: var(--main-bg-dark);
     color: var(--main-purple);
     font-size: 11px;
+    border: 1px solid var(--main-purple);
     letter-spacing: 4px;
     font-family: var(--text-font);
     font-weight: 600;
     text-decoration: none;
     padding: 8px 12px;
-    border: 1px solid var(--main-purple);
-    margin-top: 25px;
     border-radius: 3px;
     -webkit-animation: myanim2 1s 1.8s backwards;
     animation: myanim2 1s 1.8s backwards;
@@ -249,7 +249,35 @@ h1 {
     height: 100vh;
 }
 
+.about-textarea {
+    text-align: end;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+}
 
+.about-textarea::before {
+    content: "»transform.LookAt(target);";
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.7rem;
+    color: var(--main-gray);
+}
+
+.about-title h1{
+    font-size: 4rem;
+    color: var(--main-pink);
+}
+
+.about-text{
+    color: white;
+}
+
+.about-svg{
+    position: absolute;
+    bottom: 5%;
+    z-index: -1;
+    fill:white;
+}
 
 
 @media only screen and (max-width: 768px) {
@@ -292,13 +320,15 @@ h1 {
     }
 
 }
+@media only screen and (max-width:600px){
 
+}
 @media only screen and (max-width: 375px) {
     #navbar {
         display: none;
     }
 
-    #m-navbar{
+    #m-navbar {
         display: block;
     }
 
@@ -318,6 +348,10 @@ h1 {
     .title-job {
         font-size: 1.2rem;
     }
+    
+.b-contact {
+    display: none;
+}
 
     .back-land {
         position: absolute;

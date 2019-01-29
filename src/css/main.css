@@ -254,6 +254,7 @@ h1 {
     position: absolute;
     top: 10%;
     right: 5%;
+    width: 80%;
 }
 
 .about-textarea::before {
@@ -263,20 +264,25 @@ h1 {
     color: var(--main-gray);
 }
 
-.about-title h1{
+.about-title h1 {
     font-size: 4rem;
     color: var(--main-pink);
 }
 
-.about-text{
+.about-text {
     color: white;
 }
 
-.about-svg{
+.job-title {
+    margin: 0;
+}
+
+
+.about-svg {
     position: absolute;
     bottom: 5%;
     z-index: -1;
-    fill:white;
+    fill: white;
 }
 
 
@@ -288,6 +294,10 @@ h1 {
     .top-tag,
     .bot-tag,
     .text-area::before {
+        display: none;
+    }
+
+    .about-textarea::before{
         display: none;
     }
 }
@@ -320,9 +330,13 @@ h1 {
     }
 
 }
-@media only screen and (max-width:600px){
 
+@media only screen and (max-width:600px) {
+    img.about-svg{
+        transform: translate(-50%,0);
+    }
 }
+
 @media only screen and (max-width: 375px) {
     #navbar {
         display: none;
@@ -348,12 +362,19 @@ h1 {
     .title-job {
         font-size: 1.2rem;
     }
-    
-.b-contact {
-    display: none;
-}
 
-    .back-land {
-        position: absolute;
+    .b-contact {
+        display: none;
     }
+
+    .about-textarea {
+        font-size: 0.8rem;
+    }
+
+    .about-textarea h1{
+        font-size: 2rem;
+    }
+
+    
+
 }

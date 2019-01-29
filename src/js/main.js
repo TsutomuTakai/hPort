@@ -28,8 +28,10 @@ $(document).ready(function () {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
+        
+        document.querySelector(this.getAttribute('href')).scrollTo({
+            top:0,
+            left: 60,
             behavior: 'smooth'
         });
     });

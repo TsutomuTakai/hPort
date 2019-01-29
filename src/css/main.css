@@ -1,12 +1,14 @@
 :root {
     --main-bg-nav: rgb(26, 26, 26);
-    --main-nav-icon : #4d4d4e;
+    --main-nav-icon: #4d4d4e;
     --main-bg-dark: #202020;
     --main-bg-dark-blue: #182952;
+    --main-gray: rgb(82, 82, 82);
     --main-navy: #2b3595;
     --main-purple: #7045af;
     --main-pink: #e14594;
-
+    --title-font: 'Anton', sans-serif;
+    --text-font: 'Lato', sans-serif;
 }
 
 html {
@@ -59,18 +61,18 @@ h1 {
     position: absolute;
     display: block;
     top: 50%;
-    transform: translate(0%,-50%);
+    transform: translate(0%, -50%);
     font-size: 22px;
 }
 
-#navbar .navi a{
+#navbar .navi a {
     display: block;
     color: var(--main-nav-icon);
     height: 50px;
 }
 
-#navbar .navi a.active ,
-#navbar .navi a:hover{
+#navbar .navi a.active,
+#navbar .navi a:hover {
     color: var(--main-pink);
 }
 
@@ -88,7 +90,7 @@ h1 {
     width: 100%;
 }
 
-#navbar ul li a{
+#navbar ul li a {
     width: 100%;
     padding: 7px 0;
     display: block;
@@ -97,22 +99,203 @@ h1 {
     color: var(--main-nav-icon);
 }
 
-#navbar ul li a:hover{
+#navbar ul li a:hover {
     color: var(--main-pink);
 }
-#navbar ul li i{
+
+#navbar ul li i {
     font-size: 15px;
 }
 
 /* LAND */
 #land {
     height: 100vh;
+
 }
 
-#land h1{
+.top-tag,
+.bot-tag {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: var(--main-gray);
+}
+
+.top-tag {
+    position: absolute;
+    top: 2%;
+    left: 65px;
+}
+
+.bot-tag {
+    position: absolute;
+    bottom: 2%;
+    left: 65px;
+}
+
+.text-area {
     color: white;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(0, -50%);
+    letter-spacing: 2px;
+    font-family: var(--title-font);
 }
 
-#about{
+.text-area::before {
+    content: "»public class GameController : MonoBehaviour {";
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: var(--main-gray);
+}
+
+.row-text {
+    display: inline-block;
+}
+
+.big-name {
+    display: inline-block;
+}
+
+.greet,
+.present {
+    display: block;
+    font-size: 3rem;
+}
+
+.name {
+    font-size: 10rem;
+    line-height: 1;
+    color: var(--main-purple);
+
+}
+
+.title-job {
+    font-size: 3rem;
+    text-align: justify;
+}
+
+.b-contact {
+    background-color: var(--main-bg-dark);
+    color: var(--main-purple);
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-family: var(--text-font);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid var(--main-purple);
+    margin-top: 25px;
+    border-radius: 3px;
+    -webkit-animation: myanim2 1s 1.8s backwards;
+    animation: myanim2 1s 1.8s backwards;
+}
+
+.b-contact:hover {
+    color: var(--main-bg-dark);
+    background-color: var(--main-purple);
+
+}
+
+.back-land {
+    position: absolute;
+    right: 0;
+    color: var(--main-gray);
+    z-index: -1;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* ABOUT */
+#about {
     height: 100vh;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .text-area {
+        top: 70%;
+    }
+
+    .top-tag,
+    .bot-tag,
+    .text-area::before {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 670px) {
+    .text-area {
+        left: 16%;
+        top: 80%;
+        transform: translate(0, -50%);
+    }
+
+
+    .greet,
+    .present {
+        font-size: 2rem;
+        line-height: 1;
+    }
+
+    .name {
+        font-size: 6rem;
+    }
+
+    .title-job {
+        font-size: 1.5rem;
+    }
+
+    .back-land {
+        left: 12%;
+    }
+
+}
+
+@media only screen and (max-width: 375px) {
+    #navbar {
+        display: none;
+    }
+
+    .text-area {
+        color: white;
+        position: absolute;
+        left: 3%;
+        top: 80%;
+        transform: translate(0, -50%);
+        letter-spacing: 2px;
+        font-family: var(--title-font);
+    }
+
+    .greet,
+    .present {
+        display: block;
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+
+    .name {
+        font-size: 5rem;
+        line-height: 1;
+        color: var(--main-purple);
+
+    }
+
+    .title-job {
+        font-size: 1.2rem;
+        max-width: 100%;
+        text-align: justify;
+    }
+
+    .back-land {
+        position: absolute;
+        left: -25%;
+        color: var(--main-gray);
+        z-index: -1;
+        height: 100%;
+        overflow: hidden;
+    }
 }

@@ -31,11 +31,12 @@ $(document).ready(function () {
     });
 
 
-
+    $(".b-contact").click(function(){
+        $(".main").moveTo(5);
+    })
     $(".navi a, .anchor").click(function () {
         var page_index = $(this).data("index");
         mi = page_index;
         $(".main").moveTo(page_index);
-        console.log("click " + page_index);
     });
 });

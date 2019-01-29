@@ -1,0 +1,79 @@
+:root {
+    --main-bg-nav: rgb(26, 26, 26);
+    --main-bg-dark: #202020;
+    --main-bg-dark-blue: #182952;
+    --main-navy: #2b3595;
+    --main-purple: #7045af;
+    --main-pink: #e14594;
+
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+section {
+    margin-left: 60px;
+}
+
+h1 {
+    font-family: 'Anton', sans-serif;
+}
+
+/* NAVIBAR */
+#navbar {
+    width: 60px;
+    height: 100vh;
+    background-color: var(--main-bg-nav);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.logo {
+    padding: 8px 0;
+    display: block;
+}
+
+.logo img {
+    max-width: 50px;
+}
+
+#navbar .navi {
+    width: 100%;
+    position: absolute;
+    display: block;
+    top: 50%;
+    color: white;
+    transform: translate(0,-50%);
+}
+
+#navbar ul {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+#navbar lu li {
+    width: 100%;
+}
+
+/* LAND */
+#land {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--main-bg-dark);
+}

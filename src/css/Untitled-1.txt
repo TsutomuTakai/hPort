@@ -27,6 +27,18 @@ body {
     font-size: 1rem;
 }
 
+i {
+    font-weight: 900 !important;
+    font-family: 'FontAwesome' !important;
+}
+
+::before {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.7rem;
+    color: var(--main-gray);
+    text-align: end;
+}
+
 section {
     padding-left: 60px;
     height: 100vh;
@@ -190,11 +202,7 @@ h1 {
 }
 
 .text-area::before {
-    font-family: 'Courier New', Courier, monospace;
     content: "»public class GameController : MonoBehaviour {";
-    font-size: 0.7rem;
-    color: var(--main-gray);
-    text-align: end;
 
 }
 
@@ -270,9 +278,7 @@ h1 {
 
 .about-textarea::before {
     content: "»transform.LookAt(target);";
-    font-size: 0.7rem;
-    color: var(--main-gray);
-    text-align: end;
+
 }
 
 .about-text {
@@ -291,7 +297,7 @@ h1 {
 
 }
 
-/* ----------------------SKILLS-------------- */
+/* ----------------------SKILLS--------------
 #skills {
     height: 100vh;
 }
@@ -306,9 +312,6 @@ h1 {
 .skills-textarea::before {
     content: "»public class LevelScriptEditor: Editor";
     text-align: end;
-    font-size: 0.7rem;
-    color: var(--main-gray);
-    text-align: end;
 }
 
 .skills-text {
@@ -321,100 +324,27 @@ h1 {
     right: 7%;
     z-index: -1;
     overflow: hidden;
-}
+} */
 
-/* ---------------------------FOTOS------------------------- */
+/* ---------------------------FOTOS-------------------------
 .port-textarea {
     position: absolute;
-    bottom: 5%;
-    left: 2.5%;
-    padding-left: 60px;
-}
-
-.port-textarea p {
-    width: 80%;
+    right: 5%;
+    bottom: 10%;
+    text-align: end;
 }
 
 .port-textarea::before {
-    content: "»SceneManager.LoadScene ('lastJobs')";
-    font-size: 0.7rem;
-    color: var(--main-gray);
-
+    content: "»Instance.AddForce(events.foward)";
+    text-align: end;
 }
 
-.port-svg {
-    position: absolute;
-    left: 5%;
-    height: 90%;
-    z-index: -50;
-}
-
-.gallery {
-    display: flex;
+.port-textarea p {
     width: 60%;
-    height: 70%;
-    position: absolute;
-    top: 10%;
-    right: 0;
-}
+    float: right;
+} */
 
-.deck {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.job-card {
-    opacity: 0.05;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    height: 25%;
-    text-align: end;
-    -webkit-transition-duration: 1s;
-    /* Safari */
-    transition-duration: 1s;
-    transition-timing-function: ease-in;
-}
-
-.job-card:hover {
-    opacity: 1;
-}
-
-.card-content {
-    padding-right: 10px;
-    height: 100%;
-    width: 50%;
-    display: flex;
-    text-align: end;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.card-content h3 {
-    color: var(--main-purple);
-    font-family: var(--title-font);
-    font-size: 3rem;
-}
-
-.card-img {
-    margin-right: 2%;
-    margin-right: 2%;
-    width: auto;
-    height: 100%;
-    display: inline-block;
-}
-
-.card-img img {
-    border-radius: 100%;
-    overflow: hidden;
-    object-fit: cover;
-    height: 100%;
-}
-
-. @media only screen and (max-width: 768px) {}
-
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     .text-area {
         top: 70%;
     }
@@ -440,12 +370,8 @@ h1 {
     .skills-svg {
         right: -30%;
     }
-
-    .port-textarea::before {
-        display: none;
-    }
-}
-
+} */
+/* 
 @media only screen and (max-width: 670px) {
     .text-area {
         left: 16%;
@@ -471,8 +397,8 @@ h1 {
         left: 12%;
     }
 
-}
-
+} */
+/* 
 @media only screen and (max-width:600px) {
     img.about-svg {
         transform: translate(-50%, 0);
@@ -536,4 +462,4 @@ h1 {
 
 
 
-}
+} */

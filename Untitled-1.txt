@@ -118,48 +118,15 @@
 
         <!-- TIME TO SHOW SOME SICK DRAWINGS -->
         <section id="port" data-index="4">
-            <span class="top-tag">»toReturn.SetActive(true);</span>
-            <span class="bot-tag">»ShowQuestion ();</span>
-
+            <span class="top-tag">»Invoke("Your Project",1);</span>
+            <span class="bot-tag">»no.deltaTime;</span>
             <div class="port-textarea">
-                <h1>What've I Done</h1>
+                <h1>What've Done</h1>
                 <p>As a teacher, designer, student, gamer, bookworm and artist... that's a lot to do.</p>
+            </div>
+            <div class="gallery">
 
             </div>
-            <div class="gallery ">
-                <div class="deck">
-                    <div class="job-card">
-                        <div class="card-content">
-                            <h3>Illustration</h3>
-                            <p>We do need to train everyday to improve our craft. So I enjoy every oportunity to make
-                                something</p>
-                        </div>
-                        <div class="card-img">
-                            <img src="src/img/juimg/56.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="job-card">
-                        <div class="card-content">
-                            <h3>Education</h3>
-                            <p>I'm also a teacher, so I'm used to treat different kinds of costumers and requests</p>
-                        </div>
-                        <div class="card-img">
-                            <img src="src/img/juimg/80.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="job-card">
-                        <div class="card-content">
-                            <h3>Freelancing</h3>
-                            <p>Why not? Experience is always welcome and helps me to keep in touch with news</p>
-                        </div>
-                        <div class="card-img">
-                            <img src="src/img/juimg/62.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <img class="port-svg" src="src/img/svg/port.svg" alt="">
         </section>
         <section id="contact" data-index="5">
             <h1>hunterS</h1>

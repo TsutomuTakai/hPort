@@ -63,7 +63,7 @@ h1 {
     left: 65px;
 }
 
-.bot-tag a{
+.bot-tag a {
     color: var(--main-pink);
 }
 
@@ -422,7 +422,7 @@ h1 {
 /* ---------------------CONTACT----------------- */
 
 
-.contact-textarea{
+.contact-textarea {
     text-align: center;
     position: absolute;
     left: 0;
@@ -430,18 +430,19 @@ h1 {
     width: 100%;
     height: 100%;
     padding-left: 60px;
-    transform: translate(0,-15%);
+    transform: translate(0, -15%);
 }
 
 
-.contact-svg{
+.contact-svg {
     position: absolute;
     transform: translateX(-50%);
     left: 50%;
     height: 100%;
     z-index: -50;
 }
-. @media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 768px) {}
 
 @media only screen and (max-width: 768px) {
     .text-area {
@@ -499,7 +500,8 @@ h1 {
     .back-land {
         left: 12%;
     }
-    .gallery{
+
+    .gallery {
         width: 100%;
         right: 2%;
         top: 5%;
@@ -528,29 +530,32 @@ h1 {
         right: -30%;
     }
 
-    .port-textarea h1{
+    .port-textarea h1 {
         font-size: 3rem;
     }
-    .port-textarea p{
+
+    .port-textarea p {
         display: none;
     }
 
-    .gallery{
+    .gallery {
         top: 4%;
         height: 80%;
     }
 
-    .port-textarea{
+    .port-textarea {
         bottom: 2%;
     }
-        .port-textarea h1{
+
+    .port-textarea h1 {
         margin: 0;
     }
 
-    .card-content h3{
+    .card-content h3 {
         font-size: 1.5rem;
     }
-    .card-content p{
+
+    .card-content p {
         font-size: 0.7rem;
     }
 
@@ -587,7 +592,7 @@ h1 {
         display: none;
     }
 
-    form .b-contact{
+    form .b-contact {
         display: inline-block;
     }
 
@@ -598,15 +603,16 @@ h1 {
     h1 {
         font-size: 2rem;
     }
-    .port-textarea{
+
+    .port-textarea {
         width: 90%;
         left: 5%;
         bottom: 60px;
         padding: 0;
     }
-    
-    .contact-textarea{
+
+    .contact-textarea {
         padding-left: 0;
-    }    
+    }
 
 }

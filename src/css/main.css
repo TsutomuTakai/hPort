@@ -63,6 +63,10 @@ h1 {
     left: 65px;
 }
 
+.bot-tag a{
+    color: var(--main-pink);
+}
+
 /* ------------------------------NAVIBAR--------------------- */
 #navbar {
     width: 60px;
@@ -376,9 +380,11 @@ h1 {
     /* Safari */
     transition-duration: 1s;
     transition-timing-function: ease-in;
+    filter: grayscale(1);
 }
 
 .job-card:hover {
+    filter: grayscale(0);
     opacity: 1;
 }
 
@@ -413,6 +419,28 @@ h1 {
     height: 100%;
 }
 
+/* ---------------------CONTACT----------------- */
+
+
+.contact-textarea{
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    padding-left: 60px;
+    transform: translate(0,-15%);
+}
+
+
+.contact-svg{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    height: 100%;
+    z-index: -50;
+}
 . @media only screen and (max-width: 768px) {}
 
 @media only screen and (max-width: 768px) {
@@ -559,6 +587,10 @@ h1 {
         display: none;
     }
 
+    form .b-contact{
+        display: inline-block;
+    }
+
     .about-textarea {
         font-size: 0.8rem;
     }
@@ -573,6 +605,8 @@ h1 {
         padding: 0;
     }
     
-    
+    .contact-textarea{
+        padding-left: 0;
+    }    
 
 }

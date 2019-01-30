@@ -30,6 +30,7 @@ body {
 section {
     padding-left: 60px;
     height: 100vh;
+    overflow: hidden;
 }
 
 h1 {
@@ -470,6 +471,11 @@ h1 {
     .back-land {
         left: 12%;
     }
+    .gallery{
+        width: 100%;
+        right: 2%;
+        top: 5%;
+    }
 
 }
 
@@ -493,6 +499,33 @@ h1 {
     .skills-svg {
         right: -30%;
     }
+
+    .port-textarea h1{
+        font-size: 3rem;
+    }
+    .port-textarea p{
+        display: none;
+    }
+
+    .gallery{
+        top: 4%;
+        height: 80%;
+    }
+
+    .port-textarea{
+        bottom: 2%;
+    }
+        .port-textarea h1{
+        margin: 0;
+    }
+
+    .card-content h3{
+        font-size: 1.5rem;
+    }
+    .card-content p{
+        font-size: 0.7rem;
+    }
+
 }
 
 @media only screen and (max-width: 375px) {
@@ -533,7 +566,13 @@ h1 {
     h1 {
         font-size: 2rem;
     }
-
-
+    .port-textarea{
+        width: 90%;
+        left: 5%;
+        bottom: 60px;
+        padding: 0;
+    }
+    
+    
 
 }

@@ -39,4 +39,9 @@ $(document).ready(function () {
         mi = page_index;
         $(".main").moveTo(page_index);
     });
+
+    $(window).on('load', function() {
+        AOS.refresh();
+      });
+      
 });

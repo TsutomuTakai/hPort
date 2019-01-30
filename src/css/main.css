@@ -1,7 +1,7 @@
 :root {
     --main-bg-nav: rgb(26, 26, 26);
     --main-nav-icon: hsl(240, 1%, 30%);
-    --main-bg-dark: #202020;
+    --main-bg-dark: #272727;
     --main-bg-dark-blue: #182952;
     --main-gray: rgb(82, 82, 82);
     --main-navy: #2b3595;
@@ -379,6 +379,7 @@ h1 {
     .skills-textarea{
         width: 80%;
         left: 15%;
+        line-height: 1;
     }
     .skills-textarea::before{
         display: none;

@@ -1,3 +1,5 @@
+/* VARIABLES */
+
 :root {
     --main-bg-nav: rgb(26, 26, 26);
     --main-nav-icon: hsl(240, 1%, 30%);
@@ -11,6 +13,8 @@
     --text-font: 'Lato', sans-serif;
 }
 
+
+/* TAGS */
 html {
     scroll-behavior: smooth;
     font-family: 'Lato', sans-serif;
@@ -22,7 +26,12 @@ body {
     color: white;
     font-size: 1rem;
 }
-
+::before {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.7rem;
+    color: var(--main-gray);
+    text-align: end;
+}
 section {
     padding-left: 60px;
     height: 100vh;
@@ -34,8 +43,28 @@ h1 {
     color: var(--main-pink);
 }
 
+/* COMMOM */
 .onepage-pagination {
     display: none;
+}
+
+.top-tag,
+.bot-tag {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.7rem;
+    color: var(--main-gray);
+}
+
+.top-tag {
+    position: absolute;
+    top: 2%;
+    left: 65px;
+}
+
+.bot-tag {
+    position: absolute;
+    bottom: 2%;
+    left: 65px;
 }
 
 /* ------------------------------NAVIBAR--------------------- */
@@ -154,24 +183,6 @@ h1 {
 
 }
 
-.top-tag,
-.bot-tag {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.7rem;
-    color: var(--main-gray);
-}
-
-.top-tag {
-    position: absolute;
-    top: 2%;
-    left: 65px;
-}
-
-.bot-tag {
-    position: absolute;
-    bottom: 2%;
-    left: 65px;
-}
 
 .text-area {
     color: white;
@@ -185,9 +196,7 @@ h1 {
 
 .text-area::before {
     content: "»public class GameController : MonoBehaviour {";
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.7rem;
-    color: var(--main-gray);
+   
 }
 
 .row-text {
@@ -262,9 +271,7 @@ h1 {
 
 .about-textarea::before {
     content: "»transform.LookAt(target);";
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.7rem;
-    color: var(--main-gray);
+   
 }
 
 .about-text {
@@ -297,9 +304,6 @@ h1 {
 
 .skills-textarea::before {
     content: "»public class LevelScriptEditor: Editor";
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.7rem;
-    color: var(--main-gray);
     text-align: end;
 }
 
@@ -315,6 +319,22 @@ h1 {
     overflow: hidden;
 }
 
+/* ---------------------------FOTOS------------------------- */
+.port-textarea{
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+    text-align: end;
+}
+.port-textarea::before{
+    content: "»Instance.AddForce(events.foward*Life)";
+    text-align: end;
+}
+
+.port-textarea p{
+    width: 60%;
+    float: right;
+}
 @media only screen and (max-width: 768px) {
     .text-area {
         top: 70%;

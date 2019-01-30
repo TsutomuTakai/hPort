@@ -1,6 +1,6 @@
 :root {
     --main-bg-nav: rgb(26, 26, 26);
-    --main-nav-icon: #4d4d4e;
+    --main-nav-icon: hsl(240, 1%, 30%);
     --main-bg-dark: #202020;
     --main-bg-dark-blue: #182952;
     --main-gray: rgb(82, 82, 82);
@@ -19,6 +19,8 @@ html {
 body {
     overflow: hidden;
     background-color: var(--main-bg-dark);
+    color: white;
+    font-size: 1rem;
 }
 
 section {
@@ -28,7 +30,8 @@ section {
 
 h1 {
     font-family: 'Anton', sans-serif;
-    color: white;
+    font-size: 4rem;
+    color: var(--main-pink);
 }
 
 .onepage-pagination {
@@ -264,11 +267,6 @@ h1 {
     color: var(--main-gray);
 }
 
-.about-title h1 {
-    font-size: 4rem;
-    color: var(--main-pink);
-}
-
 .about-text {
     color: white;
 }
@@ -277,14 +275,45 @@ h1 {
     margin: 0;
 }
 
-
 .about-svg {
     position: absolute;
     bottom: 5%;
     z-index: -1;
     fill: white;
+    
 }
 
+/* ----------------------SKILLS-------------- */
+#skills {
+    height: 100vh;
+}
+
+.skills-textarea {
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    width: 50%;
+}
+
+.skills-textarea::before {
+    content: "»public class LevelScriptEditor: Editor";
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.7rem;
+    color: var(--main-gray);
+    text-align: end;
+}
+
+.skills-text{
+    width: 70%;
+}
+
+.skills-svg {
+    position: absolute;
+    bottom: 10%;
+    right: 7%;
+    z-index: -1;
+    overflow: hidden;
+}
 
 @media only screen and (max-width: 768px) {
     .text-area {
@@ -297,11 +326,21 @@ h1 {
         display: none;
     }
 
-    .about-textarea::before{
+    .about-textarea::before {
         display: none;
     }
-}
+    
+    .skills-textarea{
+        left: 10%;
+    }
+    .skills-textarea::before{
+        display: none;
+    }
 
+    .skills-svg{
+        right: -30%;
+    }
+}
 
 @media only screen and (max-width: 670px) {
     .text-area {
@@ -309,7 +348,6 @@ h1 {
         top: 80%;
         transform: translate(0, -50%);
     }
-
 
     .greet,
     .present {
@@ -332,12 +370,26 @@ h1 {
 }
 
 @media only screen and (max-width:600px) {
-    img.about-svg{
-        transform: translate(-50%,0);
+    img.about-svg {
+        transform: translate(-50%, 0);
     }
 }
 
+@media only screen and (max-width: 425px) {
+    .skills-textarea{
+        width: 80%;
+        left: 15%;
+    }
+    .skills-textarea::before{
+        display: none;
+    }
+
+    .skills-svg{
+        right: -30%;
+    }
+}
 @media only screen and (max-width: 375px) {
+
     #navbar {
         display: none;
     }
@@ -371,10 +423,10 @@ h1 {
         font-size: 0.8rem;
     }
 
-    .about-textarea h1{
+    h1 {
         font-size: 2rem;
     }
 
-    
+
 
 }
